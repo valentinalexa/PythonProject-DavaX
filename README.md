@@ -71,9 +71,30 @@ Structura este modulară și permite:
 - migrare ușoară spre un API web (`FastAPI`, `Flask`)
  
 
- 
-🧠 Autori:
+---
+## 👥 Contribuții pe membri
 
-Gabriel Firisar
-Dragos-Ionut Talaba
-Cristian-Valentin Alexa
+**Cristian-Valentin Alexa  – Logica matematică & CLI**
+- Implementare funcții matematice (`pow_func`, `factorial`, `fibonacci`) în `app/services/math_service.py`
+- CLI cu Click în `app/cli.py` și `cli.py` (entrypoint)
+- Teste unitare pentru funcții în `tests/test_math.py`
+
+**Dragos-Ionut Talaba – Cache, DB & Models**
+- Modele Pydantic pentru request/response (`app/models.py`)
+- Cache dict-based (`app/cache.py`)
+- Persistență SQLite (`app/database.py`)
+- Teste cache în `tests/test_cache.py`
+
+**Gabriel Firisar  – Controller, Integrare, Calitate & Frontend**
+- Orchestrare controller (`app/controller.py`)
+- Integrare CLI ↔ controller ↔ servicii ↔ cache/DB
+- Teste CLI cu Click (`tests/test_cli.py`)
+- README, .flake8, linting
+- Frontend React (implementat ulterior):
+  - UI modern cu branding Endava
+  - Integrare cu API Flask
+  - Design responsive, gradient, temă custom
+
+---
+ 
+ 
