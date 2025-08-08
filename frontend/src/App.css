@@ -1,0 +1,134 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(180deg, #192B37 0%, #417191 100%);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensures full height layout */
+#root, .center-wrapper {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+/* Center content container */
+.center-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 100%;
+  /* padding: 20px; */
+}
+
+/* Main content box */
+.main-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 36px 32px;
+  background: linear-gradient(180deg, #417191 0%, #ffffff 100%);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(25, 43, 55, 0.2);
+  border: 2px solid #192B37;
+}
+
+/* Title styling */
+.main-title {
+  text-align: center;
+  color: #192B37;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Grid for cards */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+/* Each calculator card */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 24px;
+  min-width: 260px;
+  flex: 1 1 280px;
+  max-width: 300px;
+  box-shadow: 0 6px 20px rgba(25, 43, 55, 0.15);
+  border-top: 6px solid #FF5640;
+  border-left: 1px solid #E8EAEB;
+  border-right: 1px solid #E8EAEB;
+  border-bottom: 2px solid #E8EAEB;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Card titles */
+.card h2 {
+  color: #192B37;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+/* Input styling */
+input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #417191;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+/* Submit button */
+button[type="submit"] {
+  background: linear-gradient(90deg, #192B37 0%, #417191 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(25, 43, 55, 0.15);
+  transition: background 0.25s, box-shadow 0.25s;
+  letter-spacing: 0.5px;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #417191 0%, #192B37 100%);
+  box-shadow: 0 6px 18px rgba(25, 43, 55, 0.25);
+}
+
+/* Result text */
+.card div {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  color: #47555F;
+  text-align: center;
+}

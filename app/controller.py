@@ -4,7 +4,7 @@ from app.worker import run_async
 from datetime import datetime
 
 
-def handle_pow(x: float, y: float) -> float:
+def pow_operation(x: float, y: float) -> float:
     cached = get_from_cache("pow", x, y)
     if cached is not None:
         print(f"Power {x}^{y} already cached: {cached}")
@@ -16,7 +16,7 @@ def handle_pow(x: float, y: float) -> float:
     return result
 
 
-def handle_factorial(n: int) -> int:
+def factorial_operation(n: int) -> int:
     cached = get_from_cache("factorial", n, None)
     if cached is not None:
         print(f"Factorial {n} already cached: {cached}")
@@ -28,7 +28,7 @@ def handle_factorial(n: int) -> int:
     return result
 
 
-def handle_fibonacci(n: int) -> int:
+def fibonacci_operation(n: int) -> int:
     cached = get_from_cache("fibonacci", n, None)
     if cached is not None:
         print(f"Fibonacci {n} already cached: {cached}")
